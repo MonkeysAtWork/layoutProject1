@@ -1,0 +1,317 @@
+.Projects {
+  height: auto;
+  padding: 10% 10%;
+
+  background-image: url("../../images/city-background.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.FeaturedProjects {
+  &-Header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+
+    h3 {
+      margin: 0;
+
+      color: rgb(81, 81, 81);
+      font-size: 28.2px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+    }
+
+    p {
+      color: rgb(143, 143, 143);
+      font-size: 16.2px;
+      font-family: "Open Sans", sans-serif;
+      text-align: left;
+    }
+  }
+
+  button {
+    min-width: max-content;
+    margin-top: 20px;
+    padding: 10px;
+
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(81, 81, 81);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 9px;
+    opacity: 0.42;
+
+    div {
+      color: rgb(81, 81, 81);
+      font-weight: 600;
+      font-size: 100%;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+
+      opacity: 0.71;
+    }
+  }
+
+  &-List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.FeaturedProject {
+  max-width: 304px;
+  margin-top: 5%;
+  overflow: hidden;
+
+  background-color: rgba(247, 247, 247, 0.71);
+  border-color: rgba(0, 0, 0, 0.05);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+
+  &-ProjectImage {
+    position: relative;
+
+    img {
+      opacity: 0.71;
+    }
+
+    &_new::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+
+      background-image: url("../../images/new.png");
+      background-repeat: no-repeat;
+
+      content: "";
+    }
+  }
+
+  &-PriceBadge {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+
+    width: 139px;
+    height: 35px;
+
+    color: rgb(255, 255, 255);
+    font-size: 18.2px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 35px;
+    text-align: center;
+
+    background-color: rgb(38, 166, 209);
+    border-radius: 5px;
+  }
+
+  &-Content {
+    width: 100%;
+    padding: 5%;
+  }
+
+  h4 {
+    margin: 0;
+
+    color: rgb(72, 72, 72);
+    font-weight: bold;
+    font-size: 17.2px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  p {
+    width: 250px;
+    margin: 5% 0 0;
+
+    color: rgb(72, 72, 72);
+    font-size: 13.2px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+
+    opacity: 0.788;
+  }
+
+  &-Funde {
+    margin-top: 5%;
+    padding-bottom: 5%;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    @for $i from 1 through 100 {
+      &_percents_#{$i} {
+        .FeaturedProject-FundeScale::before {
+          display: block;
+          width: $i * 1%;
+          height: 100%;
+
+          background-color: #add136;
+
+          content: "";
+        }
+
+        .FeaturedProject-FundeValues::before {
+          content: "#{$i}% Funded";
+        }
+      }
+    }
+  }
+
+  &-FundeScale {
+    height: 15px;
+    overflow: hidden;
+
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+  }
+
+  &-FundeValues {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  &-ProjectDetails {
+    display: block;
+    margin-top: 5%;
+    padding: 5%;
+
+    color: rgb(72, 72, 72);
+    font-weight: 600;
+    font-size: 16.2px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 16.2px;
+    text-align: right;
+    text-decoration: none;
+
+    opacity: 0.851;
+
+    &::after {
+      display: inline-block;
+      width: 12px;
+      height: 16px;
+      margin-left: 10px;
+
+      vertical-align: top;
+
+      background-image: url("../../images/arrow.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      content: "";
+    }
+  }
+}
+
+.Reviews {
+  margin-top: 100px;
+
+  &-Header {
+    h2 {
+      margin: 0;
+
+      color: rgb(158, 192, 45);
+      font-size: 39.2px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+    }
+
+    p {
+      color: rgb(148, 148, 148);
+      font-size: 19.2px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+    }
+  }
+
+  &-List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.Review {
+  display: inline-block;
+  max-width: 397px;
+  margin-top: 10%;
+
+  &-MessageShape {
+    position: relative;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+
+  &-MessageShape::before {
+    position: absolute;
+    bottom: -20px;
+    left: 80px;
+
+    width: 0;
+    height: 0;
+
+    border: solid rgb(240, 11, 11);
+    border-color: rgb(255, 255, 255) transparent transparent rgb(255, 255, 255);
+    border-width: 10px;
+
+    content: "";
+  }
+
+  &-Message {
+    padding: 25px 40px;
+
+    h3 {
+      color: rgb(158, 192, 45);
+      font-size: 21.2px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 15px;
+
+      color: rgb(132, 132, 132);
+      font-size: 13.2px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+    }
+  }
+
+  &-Person {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 45px;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  &-PersonImgContainer {
+    position: relative;
+
+    width: 60px;
+    height: 60px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+}

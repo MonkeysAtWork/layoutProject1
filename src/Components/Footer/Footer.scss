@@ -1,0 +1,23 @@
+.Footer {
+  &-Logos {
+    width: 100%;
+
+    padding-top: 10%;
+
+    background-image: url("../../images/FooterLogos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    border-bottom: 1px solid rgba(90, 90, 90, 0.11);
+  }
+
+  &-Copyright {
+    height: 65px;
+
+    color: rgb(132, 132, 132);
+    font-size: 13.2px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 65px;
+    text-align: center;
+  }
+}

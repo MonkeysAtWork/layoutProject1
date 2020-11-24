@@ -1,0 +1,68 @@
+.ActionCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ActionCard {
+  display: flex;
+  flex: 1 0 306px;
+  align-items: center;
+  justify-content: center;
+  height: 305px;
+  padding: 0 5%;
+
+  background-color: #f5f9eb;
+
+  &-Content {
+    max-width: 256px;
+    margin-left: 5%;
+  }
+
+  &-Btn {
+    width: 187px;
+    height: 51px;
+    margin-top: 28px;
+
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+
+    background-color: rgb(173, 209, 54);
+    border: none;
+    border-radius: 8px;
+  }
+
+  &_Blue {
+    background-color: #e2f8ff;
+
+    .ActionCard-Btn {
+      background-color: #26a6d1;
+    }
+  }
+
+  &-Img {
+    // max-height: 100px;
+    flex: 0 1 auto;
+  }
+
+  &-Header {
+    margin: 0;
+
+    color: rgb(81, 81, 81);
+    font-size: 23.2px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &-Text {
+    // width: 256px;
+    width: auto;
+    margin: 0;
+    margin-top: 35px;
+
+    color: rgb(81, 81, 81);
+    font-size: 16.2px;
+    font-family: "Open Sans", sans-serif;
+  }
+}

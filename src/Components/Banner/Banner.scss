@@ -1,0 +1,69 @@
+.Banner {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 570px;
+  padding: 0 10%;
+
+  background: url("../../images/slider-background.jpg");
+  background-position: center;
+
+  &-Header {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 3.1rem;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+
+  &-Text {
+    margin-top: 5%;
+
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 35.2px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+
+    @media screen and (max-width: 850px) {
+      font-size: 25.2px;
+    }
+  }
+
+  &-Button {
+    width: 255px;
+    height: 75px;
+    margin-top: 10%;
+
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 19.2px;
+    font-family: "Open Sans", sans-serif;
+
+    background-color: rgb(153, 197, 10);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 3.464px 0 0 rgb(0, 0, 0);
+  }
+
+  &-Control {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }
+
+  &-NextButton {
+    transform: rotate(45deg);
+  }
+
+  &-PrevButton {
+    transform: rotate(-135deg);
+  }
+}
