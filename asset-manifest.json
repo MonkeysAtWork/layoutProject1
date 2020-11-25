@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/layoutProject1/static/css/main.6d226c5d.chunk.css",
+    "main.js": "/layoutProject1/static/js/main.707d9145.chunk.js",
+    "main.js.map": "/layoutProject1/static/js/main.707d9145.chunk.js.map",
+    "runtime-main.js": "/layoutProject1/static/js/runtime-main.6a2fb016.js",
+    "runtime-main.js.map": "/layoutProject1/static/js/runtime-main.6a2fb016.js.map",
+    "static/js/2.bff1756e.chunk.js": "/layoutProject1/static/js/2.bff1756e.chunk.js",
+    "static/js/2.bff1756e.chunk.js.map": "/layoutProject1/static/js/2.bff1756e.chunk.js.map",
+    "static/js/3.7e462a20.chunk.js": "/layoutProject1/static/js/3.7e462a20.chunk.js",
+    "static/js/3.7e462a20.chunk.js.map": "/layoutProject1/static/js/3.7e462a20.chunk.js.map",
+    "index.html": "/layoutProject1/index.html",
+    "static/css/main.6d226c5d.chunk.css.map": "/layoutProject1/static/css/main.6d226c5d.chunk.css.map",
+    "static/js/2.bff1756e.chunk.js.LICENSE.txt": "/layoutProject1/static/js/2.bff1756e.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/layoutProject1/static/media/slider-background.5094114c.jpg",
+    "static/media/project1.196ae939.jpg": "/layoutProject1/static/media/project1.196ae939.jpg",
+    "static/media/project2.7089ed8f.jpg": "/layoutProject1/static/media/project2.7089ed8f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a2fb016.js",
+    "static/js/2.bff1756e.chunk.js",
+    "static/css/main.6d226c5d.chunk.css",
+    "static/js/main.707d9145.chunk.js"
+  ]
+}
